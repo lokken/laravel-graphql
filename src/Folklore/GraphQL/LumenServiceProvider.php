@@ -53,9 +53,9 @@ class LumenServiceProvider extends ServiceProvider
     public function registerGraphQL()
     {
         // Check if facades are activated
-        if (Facade::getFacadeApplication() == $this->app) {
-            class_alias(\Folklore\GraphQL\Support\Facades\GraphQL::class, 'GraphQL');
-        }
+//        if (Facade::getFacadeApplication() == $this->app) {
+//            class_alias(\Folklore\GraphQL\Support\Facades\GraphQL::class, 'GraphQL');
+//        }
 
         parent::registerGraphQL();
     }
